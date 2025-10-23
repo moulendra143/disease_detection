@@ -5,7 +5,6 @@ import com.example.disease_detection.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import java.util.Optional;
 
 @Service
@@ -34,5 +33,10 @@ public class UserService {
             return user;
         }
         return Optional.empty();
+    }
+
+    // Utility to encode a password (used by reset endpoint)
+    public String encodePassword(String rawPassword) {
+        return passwordEncoder.encode(rawPassword);
     }
 }
