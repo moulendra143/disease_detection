@@ -1,0 +1,126 @@
+/* ---------- Full-page Background ---------- */
+
+.breast-page {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------- Form Card ---------- */
+.breast-form-card {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ---------- Title ---------- */
+.breast-form-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* ---------- Input Fields ---------- */
+.breast-form-card input {
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.breast-form-card input:focus {
+  border-color: #d81b60;
+  outline: none;
+  box-shadow: 0 0 5px rgba(216,27,96,0.5);
+}
+
+/* ---------- Toggle / Option Buttons ---------- */
+.option-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 10px 0 20px 0;
+}
+
+.option {
+  flex: 1;
+  padding: 8px 0; /* shorter buttons */
+  border-radius: 20px;
+  border: 2px solid #43a047; /* green border */
+  background: #e8f5e9; /* light green */
+  color: #43a047; /* green text */
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-width: 80px; /* fixed width for all buttons */
+}
+
+.option.selected {
+  background: #43a047; /* green filled */
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(67,160,71,0.4);
+}
+
+.option:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Submit Button ---------- */
+.btn-breast-submit {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: #8e24aa; /* purple */
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-breast-submit:hover {
+  background: #6a1b9a;
+  transform: scale(1.02);
+}
+
+/* ---------- Result Display ---------- */
+.breast-result {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .breast-form-card {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .breast-form-card {
+    padding: 25px 15px;
+  }
+}

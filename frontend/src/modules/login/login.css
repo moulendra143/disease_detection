@@ -1,0 +1,173 @@
+/* === GLOBAL BACKGROUND === */
+.auth-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #001f27, #00343d);
+  font-family: "Poppins", sans-serif;
+}
+
+/* === CARD CONTAINER === */
+.login-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 45px 35px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+/* === HEADING === */
+.login-card h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* === INPUT FIELDS === */
+.login-card input[type="email"],
+.login-card input[type="password"],
+.login-card input[type="text"],
+.login-card input[type="number"] {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.login-card input::placeholder {
+  color: #cfd8dc;
+}
+
+.login-card input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+/* === PASSWORD FIELD + EYE BUTTON === */
+.password-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.password-row input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 14px 18px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+.eye-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.eye-btn:hover {
+  transform: scale(1.1);
+}
+
+/* === BUTTONS === */
+.primary-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #002b36;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+.primary-btn:hover {
+  background-color: #cfd8dc;
+  transform: scale(1.02);
+}
+
+/* === SMALL TEXT + LINKS === */
+.small {
+  font-size: 14px;
+  color: #cfd8dc;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.link {
+  color: #00bcd4;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #80deea;
+  text-decoration: underline;
+}
+
+/* === ERROR & MESSAGES === */
+.error {
+  background: rgba(255, 0, 0, 0.2);
+  color: #ffaaaa;
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.message {
+  color: #00e5ff;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* === PASSWORD STRENGTH === */
+.pwd-strength {
+  font-size: 13px;
+  text-align: left;
+  color: #ffcc80;
+  margin-bottom: 10px;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 35px 25px;
+    border-radius: 12px;
+  }
+
+  .login-card h2 {
+    font-size: 20px;
+  }
+
+  .primary-btn {
+    font-size: 15px;
+  }
+}

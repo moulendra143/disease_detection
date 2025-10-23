@@ -1,0 +1,19 @@
+.result-page {
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: 'Poppins', sans-serif;
+}
+.result-page.happy { background: url('./result-Happy.jpg') center/cover no-repeat; }
+.result-page.sad { background: url('./infected.jpeg') center/cover no-repeat; }
+
+.result-card {
+  background: rgba(255,255,255,0.92);
+  padding: 30px;
+  border-radius: 12px;
+  text-align:center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.big { font-size: 1.8rem; font-weight:700; margin:10px 0; }
+.primary-btn { padding:10px 20px; border-radius:8px; background:#1976d2; color:#fff; border:none; cursor:pointer;}
